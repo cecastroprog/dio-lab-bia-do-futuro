@@ -4,12 +4,12 @@
 
 Descreva se usou os arquivos da pasta `data`, por exemplo:
 
-| Arquivo | Formato | Utilização no Agente |
+| Arquivo | Formato | Para que serve no Nexos? |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar explicações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `perfil_investidor.json` | JSON | Personalizar explicações sobre as dúvidas e necessidades de aprendizado do cliente |
+| `produtos_financeiros.json` | JSON | Conhecer os produtos disponíveis para que eles possam ser ensinados ao cliente. |
+| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente e usar essas informações de forma didádica.|
 | `feedbacks.csv` | CSV | Analisar feedback do cliente |
 
 > [!TIP]
@@ -21,7 +21,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+O 'Fundo Multimercado' foi renomeado para 'Fundo Imobiliário (FII)' para facilitar e ter maior assertividade nas validações devido a familiaridade e conhecimento neste fundo.
 
 ---
 
@@ -30,12 +30,36 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Existem duas possibilidades, injetar os dados diretamente no prompt(Ctrl + C, Ctrl + V) ou carregar os arquivos via código, como no exemplo abaixo:
+
+```python
+import pandas as pd
+import json
+
+#CSVs
+historico = pd.read_csv('data/hitorico_atendimento.csv')
+transacoes = pd.read_csv('data/transacoes.csv')
+
+#JSONs
+with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f
+  perfil = json.load(f)
+
+with open('data/produtos_financeiros.json', 'r', encoding='utf-8' as f
+  produtos = json.load(f)
+```
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+```text
+DADOS DO CLIENTE:
+
+PERFIL DO CLIENTE:
+
+TRANSACOES DO CLIENTE:
+
+PRODUTOS DISPONIVEIS PARA ENSINO:
+```
 
 ---
 
