@@ -5,34 +5,42 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+A análise de feedbacks de clientes sobre ligações ativas dos gerentes de agência, possibilita identificar os principais obstáculos e motivos de recusa na oferta de produtos financeiros, e o processo da análise apresenta diversos desafios práticos e psicológicos. As principais dificuldades de analisar feedbacks, envolvem vieses emocionais, volume de dados e a falta de clareza nas respostas.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Será um agente automatizado consultivo, que irá: lidar com milhares de comentários de fontes diferentes (e-mails, redes sociais e pesquisas);
+analisar textos abertos, comentários vagos ou sarcásticos que não se encaixam em métricas quantitativas fáceis de medir (como notas de 1 a 10);
+Mensurar e tratar feedbacks sem contexto (como um simples "Não gostei"), que se refere a uma crítica negativa sem que o usuário explique o motivo real ou em qual etapa do processo o problema ocorreu;
+Identificar e disponibiliar relatório do "público silencioso" (a maioria moderada) que costuma ficar de fora, para futura busca de opinião;
+Interpretar a intensidade do feedback, já que termos como "razoável" ou "ruim" mudam de significado dependendo da cultura ou região.
+Identificar falta de clareza nas perguntas, visto que, pesquisas mal desenhadas geram respostas confusas que não apontam para nenhuma ação prática.
+Priorizar o que deve ser corrigido primeiro.
+Identificar o problema no feedback, e indicar qual equipe da empresa apoiará na implementação das mudanças necessárias.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Área de Customer Experience (CX) ou Sucesso do Cliente (CS), Ouvidoria (Ombudsman), Equipes de Produto e Tecnologia, e Atendimento e Operações (SAC e Suporte).
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Nexos (Focado na capacidade do agente de conectar os dados de feedbacks com melhorias nos produtos)
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+Impacialidade
+Foco em dados
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Tom Construtivo
 
 ### Exemplos de Linguagem
 - Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
