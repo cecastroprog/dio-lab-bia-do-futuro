@@ -61,7 +61,7 @@ Foco em Dados: Transforma textos livres ou opiniões em métricas claras e insig
 Construtivo, formal e técnico.
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
+- Saudação: [ex: "Olá! Como posso ajudar com os feedbacks hoje?"]
 - Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
 - Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
 
@@ -73,7 +73,7 @@ Construtivo, formal e técnico.
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
+    A[Cliente] -->|Mensagem| B[Chatbot Interface]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
@@ -85,10 +85,9 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | [Chatbot em Streamlit](https://streamlit.io/) |
+| LLM | Ollama (local) |
+| Base de Conhecimento | JSON/CSV mockados na pastA 'data' |
 
 ---
 
@@ -96,12 +95,14 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] Agente só responde com base nos dados fornecidos
+- [ ] Respostas incluem fonte da informação
+- [ ] Quando não sabe, admite e redireciona
+- [ ] Não faz recomendações foca apenas em relatar as métricas
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- Não faz recomendações
+- NÃO acessa dadosbancários sensiveis (como senhas etc)
+- NÃO substitui um profissional certificado
