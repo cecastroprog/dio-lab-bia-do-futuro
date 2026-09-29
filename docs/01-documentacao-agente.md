@@ -10,16 +10,6 @@ A análise de feedbacks de clientes sobre ligações ativas dos gerentes de agê
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-O agente automatizado consultivo lidará com milhares de comentários de diferentes fontes, como e-mails, redes sociais e pesquisas.
-analisar textos abertos, comentários vagos ou sarcásticos que não se encaixam em métricas quantitativas fáceis de medir (como notas de 1 a 10);
-Mensurar e tratar feedbacks sem contexto (como um simples "Não gostei"), que se refere a uma crítica negativa sem que o usuário explique o motivo real ou em qual etapa do processo o problema ocorreu;
-Identificar e disponibiliar relatório do "público silencioso" (a maioria moderada) que costuma ficar de fora, para futura busca de opinião;
-Interpretar a intensidade do feedback, já que termos como "razoável" ou "ruim" mudam de significado dependendo da cultura ou região.
-Identificar falta de clareza nas perguntas, visto que, pesquisas mal desenhadas geram respostas confusas que não apontam para nenhuma ação prática.
-Priorizar o que deve ser corrigido primeiro.
-Identificar o problema no feedback, e indicar qual equipe da empresa apoiará na implementação das mudanças necessárias.
-
-
 Como um consultor automatizado, o agente é projetado para processar e estruturar volumosas cargas de feedbacks (e-mails, redes sociais e pesquisas), traduzindo dados não estruturados em insights acionáveis.
 
 Principais Atribuições:
