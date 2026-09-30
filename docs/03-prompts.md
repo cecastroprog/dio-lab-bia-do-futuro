@@ -275,3 +275,4 @@ Como analista de feedbacks não posso recomendar investimentos, mas caso tenha a
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
 - Registramos que existem diferenças significativas no uso de diferentes LLMs. Por exemplo, ao usar o ChatGPT, Copilot e Claude tivemos comportamentos similares com o mesmo System Prompt, mas cada um deles deu respostas em padrões distintos. Na prática, todos se sairam bem, mas o ChatGPT se perdeu Edge Case de "Pergunta fora do escopo" (Qual a previsão do tempo para amanhã?).
+- Foi incluído o novo arquivo da base de dados de feedbacks em formato csv que será utilizado como base de conhecimento na análise do feedbacks de clientes.
