@@ -28,7 +28,7 @@ Crie testes simples para validar seu agente:
 
 ### Teste 1: Solicitação de relatório simples
 - **Pergunta:** "Solicito relatório contendo o nome e o comentário de todos os clientes"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
+- **Resposta esperada:** Valor baseado no `feedbacks_clientes.csv`
 - **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
