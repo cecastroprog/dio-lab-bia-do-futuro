@@ -54,7 +54,16 @@ Crie testes simples para validar seu agente:
 ### Teste 6: Verificar se existe feedback especifico
 - **Pergunda:** "Eu sou o Lucas Santos, eu possuo algum feedback com relação ao time de Atendimento Investimentos?"
 - **Resposta esperada:** Você tem vários feedbacks com relação ao time de Atendimento Investimentos. Vamos analisar alguns deles:
-- **Resultado:** [x] Correto  [ ] Incorreto
+- **Resultado:** [ ] Correto  [x] Incorreto
+
+### Teste 7: Questionar detalhes do resultado no relatório 
+- **Pergunda:** "Estranho esse feedback FB-019 me parece que ele pertence ao time de Suporte Digital. Por que ele esta sendo mencionado na relação de feedbacks do time de Atendimento Investimentos?"
+- **Resposta esperada:** Eu posso explicar melhor esse feedback, mas preciso dizer que não tenho essa informação sobre como ele foi classificado no time de Atendimento Investimentos. No entanto, posso dar uma explicação sobre o feedback em si.
+
+O feedback FB-019 parece referir uma dúvida feita por uma cliente, Aline Pereira, sobre a instabilidade do CDB Liquidez Diária, e a maneira como ela foi tratada pelo time do Suporte Digital. Ele menciona que a taxa de administração é levemente alta, e que o CDB Liquidez Diária oscila bastante, como esperado.
+
+É possível que, de alguma forma, ele tenha sido classificado no time de Atendimento Investimentos, mas sem uma explicação clara sobre como isso ocorreu.
+- **Resultado:** [ ] Correto  [x] Incorreto
 
 ---
 
@@ -63,10 +72,13 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- A conferência da relação de itens do arquivo feedbacks_cliente.csv bateu com a relação de clientes exibidos no relatório.
+- A conferência da relação de itens do arquivo feedbacks_cliente.csv conferiu com a relação de clientes exibidos no relatório.
+- No teste 7, imagino que alguma regra foi acionada pelo fato do agente responder que não tem essa informação sobre como o feedback foi classificado no time de Atendimento Investimentos. Nesse momento entendo que ele não soube responder, adimitiu e explicou o feedback mencionado.
 
 **O que pode melhorar:**
 - No teste 6, o resultado incluiu o feedback FB-019 que pertence ao time de Suporte Digital. A questão é: Por que ele esta sendo mencionado na relação de feedbacks do time de Atendimento Investimentos?
+- Percebi que o agente não esta guardando o histório para ajudar no contexto, deve ser por isso que não está sabendo sobre o relatório que solicitei na conversa anterior.
+- Pretendo tentar resolver esse problema primeiramente incluindo uma nova tabela que sirva de apoio para a tabela de feedback, ou até mesmo incluir uma tabela com o histórico e inclui-lo no contexto.  
 
 ---
 
