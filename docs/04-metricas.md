@@ -51,6 +51,11 @@ Crie testes simples para validar seu agente:
 - **Resposta esperada:** De acordo com os dados fornecidos, há 30 feedbacks de clientes que enviaram feedbacks sobre sua experiência com a instituição financeira.
 - **Resultado:** [x] Correto  [ ] Incorreto
 
+### Teste 6: Verificar se existe feedback especifico
+- **Pergunda:** "Eu sou o Lucas Santos, eu possuo algum feedback com relação ao time de Atendimento Investimentos?"
+- **Resposta esperada:** Você tem vários feedbacks com relação ao time de Atendimento Investimentos. Vamos analisar alguns deles:
+- **Resultado:** [x] Correto  [ ] Incorreto
+
 ---
 
 ## Resultados
