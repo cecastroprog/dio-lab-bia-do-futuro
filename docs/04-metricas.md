@@ -46,6 +46,11 @@ Crie testes simples para validar seu agente:
 - **Resposta esperada:** Agente admite não ter essa informação
 - **Resultado:** [x] Correto  [ ] Incorreto
 
+### Teste 5: Conferir total de itens da base
+- **Pergunta:** "Quantos clientes enviaram feedbacks?"
+- **Resposta esperada:** De acordo com os dados fornecidos, há 30 feedbacks de clientes que enviaram feedbacks sobre sua experiência com a instituição financeira.
+- **Resultado:** [x] Correto  [ ] Incorreto
+
 ---
 
 ## Resultados
