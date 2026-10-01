@@ -72,6 +72,7 @@ O feedback FB-019 parece referir uma dúvida feita por uma cliente, Aline Pereir
 Use com os participante do teste:
 
 | Métrica | Pergunta | Nota(1-5) |
+|---------|----------|-----------|
 | Assertividade | "A resposta respondeu sua pergunta?" | __ |
 | Segurança | "As informações pareceram confiáveis?" | __ |
 | Coerência | "Alinguagem foi clara e fácil de entender? | __ |
