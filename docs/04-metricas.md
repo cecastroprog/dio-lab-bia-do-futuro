@@ -26,10 +26,10 @@ A avaliação pode ser feita de duas formas complementares:
 
 Crie testes simples para validar seu agente:
 
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
+### Teste 1: Solicitação de relatório simples
+- **Pergunta:** "Solicito relatório contendo o nome e o comentário de todos os clientes"
 - **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
 - **Pergunta:** "Qual investimento você recomenda para mim?"
@@ -53,7 +53,7 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- A conferência da relação de itens do arquivo feedbacks_cliente.csv bateu com a relação de clientes exibidos no relatório.
 
 **O que pode melhorar:**
 - [Liste aqui]
