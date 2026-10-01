@@ -66,7 +66,7 @@ Após os testes, registre suas conclusões:
 - A conferência da relação de itens do arquivo feedbacks_cliente.csv bateu com a relação de clientes exibidos no relatório.
 
 **O que pode melhorar:**
-- [Liste aqui]
+- No teste 6, o resultado incluiu o feedback FB-019 que pertence ao time de Suporte Digital. A questão é: Por que ele esta sendo mencionado na relação de feedbacks do time de Atendimento Investimentos?
 
 ---
 
