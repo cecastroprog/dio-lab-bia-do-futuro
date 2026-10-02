@@ -158,32 +158,37 @@ Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [L
 
 ## Evidências dos Testes de histórico com Métricas
 
-Teste 08
+### Como interpretar
+- Perguntas 6 e 7 devem funcionar. Se falharem, o histórico não está chegando ao prompt. Confira o historico.json e a função perguntar.
+- Perguntas 8, 9 e 10 mostram o limite. O ideal é o agente admitir que não tem a informação, como manda o seu system prompt ("Não tenho essa informação, mas posso explicar..."). Se ele responder com segurança algo errado, isso é alucinação. O llama3.2 é um modelo pequeno e costuma fazer isso, então anote quando acontecer.
+- A pergunta 1 sozinha engana. "O que é feedback negativo?" o modelo responde pelo conhecimento geral, sem precisar de memória. Por isso as analogias nas perguntas 2 e 3: só dá para acertá-las lendo o histórico.
+
+Teste 08 - Pergunta 1
 <img width="1592" height="1036" alt="teste_historico_01" src="https://github.com/user-attachments/assets/6c637882-b9c1-4268-a0c1-c7bbd083c2ab" />
 
-Teste 09
+Teste 09 - Pergunta 2
 <img width="1328" height="1036" alt="teste_historico_02" src="https://github.com/user-attachments/assets/b02914b9-e2a5-47bc-81e9-68587179935a" />
 
-Teste 10
+Teste 10 - Pergunta 3
 <img width="1328" height="1036" alt="teste_historico_04" src="https://github.com/user-attachments/assets/e80ce6c3-04ab-4a80-8953-b21519a908b3" />
 
-Teste 11
+Teste 11 - Pergunta 4
 <img width="1328" height="1036" alt="teste_historico_03" src="https://github.com/user-attachments/assets/587c193d-1076-4033-8555-38aa13d15b29" />
 
-Teste 12
+Teste 12 - Pergunta 5
 <img width="1328" height="1036" alt="teste_historico_06" src="https://github.com/user-attachments/assets/7615f29a-9b99-4536-83bb-50d0e0289e29" />
 
-Teste 13
+Teste 13 - Pergunta 6
 <img width="1328" height="1036" alt="teste_historico_05" src="https://github.com/user-attachments/assets/5bb2a6dd-308d-48bb-ad12-21f016de1f44" />
 
-Teste 14
+Teste 14 - Pergunta 7
 <img width="1328" height="1036" alt="teste_historico_07" src="https://github.com/user-attachments/assets/a34beddf-7c01-4b5e-8574-ab6dc449359d" />
 
-Teste 15
+Teste 15 - Pergunta 8
 <img width="1328" height="1036" alt="teste_historico_09" src="https://github.com/user-attachments/assets/2cd8a1b6-49ef-4311-9258-227f3b7bc1d8" />
 
-Teste 16
+Teste 16 - Pergunta 9
 <img width="1328" height="1036" alt="teste_historico_08" src="https://github.com/user-attachments/assets/b85b14dd-81fa-409f-b486-8a0fc183722f" />
 
-Teste 17
+Teste 17 - Pergunta 10
 <img width="1328" height="1036" alt="teste_historico_10" src="https://github.com/user-attachments/assets/75cb54fd-7af1-4a1d-93e4-6dbd8910f982" />
