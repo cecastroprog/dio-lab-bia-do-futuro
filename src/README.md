@@ -30,4 +30,4 @@ streamlit run app.py
 
 ## Evidência de Execução
 
-<img width="1148" height="957" alt="evidencia_questionar_detalhes" src="https://github.com/user-attachments/assets/95e4e116-54af-4c77-b0a9-f7c6bea9e0e3" />
+<img width="1148" height="990" alt="evidencia_olah" src="https://github.com/user-attachments/assets/83a29161-c571-4ae2-a035-9f70bfbba93f" />
