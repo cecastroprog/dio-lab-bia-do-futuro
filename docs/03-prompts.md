@@ -157,7 +157,7 @@ Segue o feedback recebido:
 
 **Usuário:**
 ```
-me de um relatório dos feedback relacionados ao meu time?
+Disponibilize o relatório de feedbacks relacionados ao meu time
 ```
 
 **Nexos:**
@@ -277,3 +277,4 @@ Como analista de feedbacks não posso recomendar investimentos, mas caso tenha a
 
 - Registramos que existem diferenças significativas no uso de diferentes LLMs. Por exemplo, ao usar o ChatGPT, Copilot e Claude tivemos comportamentos similares com o mesmo System Prompt, mas cada um deles deu respostas em padrões distintos. Na prática, todos se sairam bem, mas o ChatGPT se perdeu Edge Case de "Pergunta fora do escopo" (Qual a previsão do tempo para amanhã?).
 - Foi incluído o novo arquivo da base de dados de feedbacks em formato csv que será utilizado como base de conhecimento na análise do feedbacks de clientes.
+- Foram incluidos os datasets histórico e metrica em formato json para ajudar no contexto e medir a performance do app.
