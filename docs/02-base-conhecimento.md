@@ -12,6 +12,8 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente e usar essas informações de forma didádica.|
 | `feedbacks.csv` | CSV | Analisar feedback do cliente |
 | `historico.json` | JSON | Consultar histórico das conversas |
+| `metricas.json` | JSON | Registrar métricas de performance |
+
 
 > [!TIP]
 > **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
