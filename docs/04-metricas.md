@@ -148,6 +148,7 @@ Após os testes, registre suas conclusões:
 **O que funcionou bem:**
 - A conferência da relação de itens do arquivo feedbacks_cliente.csv conferiu com a relação de clientes exibidos no relatório.
 - No teste 7, imagino que alguma regra foi acionada pelo fato do agente responder que não tem essa informação sobre como o feedback foi classificado no time de Atendimento Investimentos. Nesse momento entendo que ele não soube responder, adimitiu e explicou o feedback mencionado.
+- Implementei um painel com o resultado das métricas de performance, para analisar as requesitos de qualidade.
 
 **O que pode melhorar:**
 - No teste 6, o resultado incluiu o feedback FB-019 que pertence ao time de Suporte Digital. A questão é: Por que ele esta sendo mencionado na relação de feedbacks do time de Atendimento Investimentos?
