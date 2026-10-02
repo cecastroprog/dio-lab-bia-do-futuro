@@ -66,47 +66,47 @@ Crie testes simples para validar seu agente:
 - **Resposta esperada:** Resposta normal
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 9: Plantar um detalhe específico
+### Teste 9: Teste de histórico - Plantar um detalhe específico
 - **Pergunda:** "Explique o que é feedback positivo usando uma analogia com restaurante."
 - **Resposta esperada:** Resposta com analogia de restaurante
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 10: Plantar outro detalhe específico
+### Teste 10: Teste de histórico - Plantar outro detalhe específico
 - **Pergunda:** "Explique o que é NPS usando uma analogia com futebol."
 - **Resposta esperada:** Resposta com analogia de futebol
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 11: Preencher o histórico
+### Teste 11: Teste de histórico - Preencher o histórico
 - **Pergunda:** "Qual a diferença entre feedback e reclamação?"
 - **Resposta esperada:** Resposta normal
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 12: Preencher o histórico
+### Teste 12: Teste de histórico - Preencher o histórico
 - **Pergunda:** "Por que analisar feedbacks é importante?"
 - **Resposta esperada:** Resposta normal
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 13: Memória imediata (distância 1)
+### Teste 13: Teste de histórico - Memória imediata (distância 1)
 - **Pergunda:** "Resuma em uma frase a sua última resposta."
 - **Resposta esperada:** Resume a resposta da pergunta 5
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 14: Memória no limite (pergunta 2, distância 5)
+### Teste 14: Teste de histórico - Memória no limite (pergunta 2, distância 5)
 - **Pergunda:** "Qual analogia você usou para explicar o feedback positivo?"
 - **Resposta esperada:** Lembra da analogia do restaurante
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 15: Memória além do limite (pergunta 1)
+### Teste 15: Teste de histórico - Memória além do limite (pergunta 1)
 - **Pergunda:** "Qual foi a minha primeira pergunta nesta conversa?"
 - **Resposta esperada:** Não deve saber
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 16: Memória além do limite (pergunta 3)
+### Teste 16: Teste de histórico - Memória além do limite (pergunta 3)
 - **Pergunda:** "Qual analogia você usou para explicar o NPS?"
 - **Resposta esperada:** Não deve saber (ou inventar)
 - **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 17: Alcance total da memória
+### Teste 17: Teste de histórico - Alcance total da memória
 - **Pergunda:** "Liste, em ordem, todas as perguntas que fiz até agora."
 - **Resposta esperada:** Alcance total da memória
 - **Resultado:** [x] Correto  [ ] Incorreto
