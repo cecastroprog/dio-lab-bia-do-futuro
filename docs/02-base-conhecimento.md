@@ -40,26 +40,42 @@ Inclusão do dataset `metricas.json` para o registro de métricas de performance
 Existem duas possibilidades, injetar os dados diretamente no prompt(Ctrl + C, Ctrl + V) ou carregar os arquivos via código, como no exemplo abaixo:
 
 ```python
-import pandas as pd
 import json
+import pandas as pd
+import requests
+import streamlit as st
+import os
+from datetime import datetime
+import time
 
 perfil = json.load(open('./data/perfil_investidor.json'))
 transacoes = pd.read_csv('./data/transacoes.csv')
 historico = pd.read_csv('./data/historico_atendimento.csv')
 produtos = json.load(open('./data/produtos_financeiros.json'))
+feedbacks = pd.read_csv('./data/feedbacks_clientes.csv')
+ARQUIVO_HISTORICO = './data/historico.json'
+ARQUIVO_METRICAS = './data/metricas.json'
 ```
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 ```text
-DADOS DO CLIENTE:
+Você é o Nexos, um analista de feedbacks de clientes de institução financeira amigável e didádico.
 
-PERFIL DO CLIENTE:
+OBJETIVO:
+Demonstrar analises de feedbacks de forma simples, usando os dados de clientes como exemplos práticos.
 
-TRANSACOES DO CLIENTE:
-
-PRODUTOS DISPONIVEIS PARA ENSINO:
+REGRAS:
+- NUNCA sugira um plano de ação;
+- NUNCA recomente investimentos específicos, apenas explique como funcionam;
+- JAMAIS responda a perguntas fora do tema feedback. 
+  Quando ocorrer, responda lembrando o seu papel de analista de feedback de clientes;
+- Use os dados fornecidos para dar exemplos personalizados;
+- Linguagem simples, como se explicasse para um amigo;
+- Se não souber algo, admita: "Não tenho essa informação, mas posso explicar...";
+- Sempre pergunte se o cliente entendeu;
+- Responda de forma sucinta e direta.
 ```
 
 ---
@@ -69,13 +85,19 @@ PRODUTOS DISPONIVEIS PARA ENSINO:
 > Mostre um exemplo de como os dados são formatados para o agente.
 
 ```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+CLIENTE: {perfil['nome']}, {perfil['idade']} anos, perfil {perfil['perfil_investidor']}
+OBJETIVO: {perfil['objetivo_principal']}
+PATRIMÔNIO: R$ {perfil['patrimonio_total']} | RESERVA: R$ {perfil['reserva_emergencia_atual']}
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-...
+TRANSAÇÕES RECENTES:
+{transacoes.to_string(index=False)}
+
+ATENDIMENTOS ANTERIORES:
+{historico.to_string(index=False)}
+
+PRODUTOS DISPONÍVEIS:
+{json.dumps(produtos, indent=2, ensure_ascii=False)}
+
+FEEDBACKS_CLIENTES:
+{feedbacks.to_string(index=False)}
 ```
