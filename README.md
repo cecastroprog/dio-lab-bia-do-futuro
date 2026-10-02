@@ -83,7 +83,8 @@ flowchart TD
 │   ├── historico_atendimento.csv
 │   ├── perfil_investidor.json
 │   ├── produtos_financeiros.json
-│   └── transacoes.csv
+│   ├── transacoes.csv
+|   └── feedbacks_clientes.csv
 ├── docs/                          # Documentação detalhada
 │   ├── 01-documentacao-agente.md  # Caso de uso, persona e arquitetura
 │   ├── 02-base-conhecimento.md    # Estratégia de dados
