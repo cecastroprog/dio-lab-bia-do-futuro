@@ -119,9 +119,9 @@ Use com os participante do teste:
 
 | Métrica | Pergunta | Nota(1-5) |
 |---------|----------|-----------|
-| Assertividade | "A resposta respondeu sua pergunta?" | __ |
-| Segurança | "As informações pareceram confiáveis?" | __ |
-| Coerência | "Alinguagem foi clara e fácil de entender? | __ |
+| Assertividade | "A resposta respondeu sua pergunta?" | 5 |
+| Segurança | "As informações pareceram confiáveis?" | 5 |
+| Coerência | "A linguagem foi clara e fácil de entender? | 5 |
 
 Comentário aberto: O que poderia melhorar?
 
