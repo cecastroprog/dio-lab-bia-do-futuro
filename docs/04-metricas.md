@@ -146,13 +146,7 @@ Após os testes, registre suas conclusões:
 
 ## Métricas Avançadas (Opcional)
 
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
-
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
-
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+<img width="1724" height="1583" alt="grafico_performance_historico" src="https://github.com/user-attachments/assets/a93a0c97-af6b-4c31-9758-373d02630ca1" />
 
 ---
 
