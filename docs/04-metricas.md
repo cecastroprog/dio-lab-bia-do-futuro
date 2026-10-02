@@ -65,6 +65,66 @@ O feedback FB-019 parece referir uma dúvida feita por uma cliente, Aline Pereir
 É possível que, de alguma forma, ele tenha sido classificado no time de Atendimento Investimentos, mas sem uma explicação clara sobre como isso ocorreu.
 - **Resultado:** [ ] Correto  [x] Incorreto
 
+### Teste 8: Teste de histórico
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 9: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 10: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 11: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 12: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 13: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 14: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 15: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 16: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 17: ???
+- **Pergunda:** ""
+- **Resposta esperada:** 
+
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
 ---
 
 ## Formulário de Feedback
