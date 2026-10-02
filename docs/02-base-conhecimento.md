@@ -28,6 +28,8 @@ O 'Fundo Multimercado' foi renomeado para 'Fundo Imobiliário (FII)' para facili
 
 Inclusão dos arquivos de dados essenciais: `feedbacks.csv` (contendo os dados dos feedbacks de clientes) e `historico.json` (armazenando o histórico das conversas), que são fundamentais para o funcionamento do agente de análise de feedbacks.
 
+Inclusão do dataset `metricas.json` para o registro de métricas de performance.
+
 ---
 
 ## Estratégia de Integração
