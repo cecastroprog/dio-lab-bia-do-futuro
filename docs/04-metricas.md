@@ -65,63 +65,63 @@ O feedback FB-019 parece referir uma dúvida feita por uma cliente, Aline Pereir
 É possível que, de alguma forma, ele tenha sido classificado no time de Atendimento Investimentos, mas sem uma explicação clara sobre como isso ocorreu.
 - **Resultado:** [ ] Correto  [x] Incorreto
 
-### Teste 8: Teste de histórico
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 8: Teste de histórico - Plantar a primeira interação
+- **Pergunda:** "O que é um feedback negativo?"
+- **Resposta esperada:** Resposta normal
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 9: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 9: Plantar um detalhe específico
+- **Pergunda:** "Explique o que é feedback positivo usando uma analogia com restaurante."
+- **Resposta esperada:** Resposta com analogia de restaurante
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 10: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 10: Plantar outro detalhe específico
+- **Pergunda:** "Explique o que é NPS usando uma analogia com futebol."
+- **Resposta esperada:** Resposta com analogia de futebol
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 11: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 11: Preencher o histórico
+- **Pergunda:** "Qual a diferença entre feedback e reclamação?"
+- **Resposta esperada:** Resposta normal
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 12: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 12: Preencher o histórico
+- **Pergunda:** "Por que analisar feedbacks é importante?"
+- **Resposta esperada:** Resposta normal
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 13: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 13: Memória imediata (distância 1)
+- **Pergunda:** "Resuma em uma frase a sua última resposta."
+- **Resposta esperada:** Resume a resposta da pergunta 5
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 14: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 14: Memória no limite (pergunta 2, distância 5)
+- **Pergunda:** "Qual analogia você usou para explicar o feedback positivo?"
+- **Resposta esperada:** Lembra da analogia do restaurante
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 15: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 15: Memória além do limite (pergunta 1)
+- **Pergunda:** "Qual foi a minha primeira pergunta nesta conversa?"
+- **Resposta esperada:** Não deve saber
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 16: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 16: Memória além do limite (pergunta 3)
+- **Pergunda:** "Qual analogia você usou para explicar o NPS?"
+- **Resposta esperada:** Não deve saber (ou inventar)
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 17: ???
-- **Pergunda:** ""
-- **Resposta esperada:** 
+### Teste 17: Alcance total da memória
+- **Pergunda:** "Liste, em ordem, todas as perguntas que fiz até agora."
+- **Resposta esperada:** Alcance total da memória
 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
