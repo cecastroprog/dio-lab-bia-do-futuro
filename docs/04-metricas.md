@@ -59,71 +59,57 @@ Crie testes simples para validar seu agente:
 ### Teste 7: Questionar detalhes do resultado no relatório 
 - **Pergunda:** "Estranho esse feedback FB-019 me parece que ele pertence ao time de Suporte Digital. Por que ele esta sendo mencionado na relação de feedbacks do time de Atendimento Investimentos?"
 - **Resposta esperada:** Eu posso explicar melhor esse feedback, mas preciso dizer que não tenho essa informação sobre como ele foi classificado no time de Atendimento Investimentos. No entanto, posso dar uma explicação sobre o feedback em si.
-
-O feedback FB-019 parece referir uma dúvida feita por uma cliente, Aline Pereira, sobre a instabilidade do CDB Liquidez Diária, e a maneira como ela foi tratada pelo time do Suporte Digital. Ele menciona que a taxa de administração é levemente alta, e que o CDB Liquidez Diária oscila bastante, como esperado.
-
-É possível que, de alguma forma, ele tenha sido classificado no time de Atendimento Investimentos, mas sem uma explicação clara sobre como isso ocorreu.
 - **Resultado:** [ ] Correto  [x] Incorreto
 
 ### Teste 8: Teste de histórico - Plantar a primeira interação
 - **Pergunda:** "O que é um feedback negativo?"
 - **Resposta esperada:** Resposta normal
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 9: Plantar um detalhe específico
 - **Pergunda:** "Explique o que é feedback positivo usando uma analogia com restaurante."
 - **Resposta esperada:** Resposta com analogia de restaurante
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 10: Plantar outro detalhe específico
 - **Pergunda:** "Explique o que é NPS usando uma analogia com futebol."
 - **Resposta esperada:** Resposta com analogia de futebol
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 11: Preencher o histórico
 - **Pergunda:** "Qual a diferença entre feedback e reclamação?"
 - **Resposta esperada:** Resposta normal
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 12: Preencher o histórico
 - **Pergunda:** "Por que analisar feedbacks é importante?"
 - **Resposta esperada:** Resposta normal
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 13: Memória imediata (distância 1)
 - **Pergunda:** "Resuma em uma frase a sua última resposta."
 - **Resposta esperada:** Resume a resposta da pergunta 5
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 14: Memória no limite (pergunta 2, distância 5)
 - **Pergunda:** "Qual analogia você usou para explicar o feedback positivo?"
 - **Resposta esperada:** Lembra da analogia do restaurante
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 15: Memória além do limite (pergunta 1)
 - **Pergunda:** "Qual foi a minha primeira pergunta nesta conversa?"
 - **Resposta esperada:** Não deve saber
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 16: Memória além do limite (pergunta 3)
 - **Pergunda:** "Qual analogia você usou para explicar o NPS?"
 - **Resposta esperada:** Não deve saber (ou inventar)
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 17: Alcance total da memória
 - **Pergunda:** "Liste, em ordem, todas as perguntas que fiz até agora."
 - **Resposta esperada:** Alcance total da memória
-
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ---
 
