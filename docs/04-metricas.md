@@ -166,3 +166,37 @@ Para quem quer explorar mais, algumas métricas técnicas de observabilidade tam
 - Logs e taxa de erros.
 
 Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+
+---
+
+## Evidências dos Testes de histórico com Métricas
+
+Teste 08
+<img width="1592" height="1036" alt="teste_historico_01" src="https://github.com/user-attachments/assets/6c637882-b9c1-4268-a0c1-c7bbd083c2ab" />
+
+Teste 09
+<img width="1328" height="1036" alt="teste_historico_02" src="https://github.com/user-attachments/assets/b02914b9-e2a5-47bc-81e9-68587179935a" />
+
+Teste 10
+<img width="1328" height="1036" alt="teste_historico_04" src="https://github.com/user-attachments/assets/e80ce6c3-04ab-4a80-8953-b21519a908b3" />
+
+Teste 11
+<img width="1328" height="1036" alt="teste_historico_03" src="https://github.com/user-attachments/assets/587c193d-1076-4033-8555-38aa13d15b29" />
+
+Teste 12
+<img width="1328" height="1036" alt="teste_historico_06" src="https://github.com/user-attachments/assets/7615f29a-9b99-4536-83bb-50d0e0289e29" />
+
+Teste 13
+<img width="1328" height="1036" alt="teste_historico_05" src="https://github.com/user-attachments/assets/5bb2a6dd-308d-48bb-ad12-21f016de1f44" />
+
+Teste 14
+<img width="1328" height="1036" alt="teste_historico_07" src="https://github.com/user-attachments/assets/a34beddf-7c01-4b5e-8574-ab6dc449359d" />
+
+Teste 15
+<img width="1328" height="1036" alt="teste_historico_09" src="https://github.com/user-attachments/assets/2cd8a1b6-49ef-4311-9258-227f3b7bc1d8" />
+
+Teste 16
+<img width="1328" height="1036" alt="teste_historico_08" src="https://github.com/user-attachments/assets/b85b14dd-81fa-409f-b486-8a0fc183722f" />
+
+Teste 17
+<img width="1328" height="1036" alt="teste_historico_10" src="https://github.com/user-attachments/assets/75cb54fd-7af1-4a1d-93e4-6dbd8910f982" />
