@@ -24,6 +24,8 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 O 'Fundo Multimercado' foi renomeado para 'Fundo Imobiliário (FII)' para facilitar e ter maior assertividade nas validações devido a familiaridade e conhecimento neste fundo.
 
+Inclusão dos arquivos de dados essenciais: `feedbacks.csv` (contendo os dados dos feedbacks de clientes) e `historico.json` (armazenando o histórico das conversas), que são fundamentais para o funcionamento do agente de análise de feedbacks.
+
 ---
 
 ## Estratégia de Integração
