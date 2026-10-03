@@ -160,8 +160,37 @@ Com o intuito de realizar os testes de performance do app, implementei o painel 
 
 ### Como interpretar
 - Perguntas 6 e 7 devem funcionar. Se falharem, o histórico não está chegando ao prompt. Confira o historico.json e a função perguntar.
-- Perguntas 8, 9 e 10 mostram o limite. O ideal é o agente admitir que não tem a informação, como manda o seu system prompt ("Não tenho essa informação, mas posso explicar..."). Se ele responder com segurança algo errado, isso é alucinação. O llama3.2 é um modelo pequeno e costuma fazer isso, então anote quando acontecer.
+- Perguntas 8, 9 e 10 mostram o limite. O ideal é o agente admitir que não tem a informação, como manda no system prompt ("Não tenho essa informação, mas posso explicar..."). Se ele responder com segurança algo errado, isso é alucinação. O llama3.2 é um modelo pequeno e costuma fazer isso, então anotar quando acontecer.
 - A pergunta 1 sozinha engana. "O que é feedback negativo?" o modelo responde pelo conhecimento geral, sem precisar de memória. Por isso as analogias nas perguntas 2 e 3: só dá para acertá-las lendo o histórico.
+
+### Percepções da análise
+
+##### 1. A leitura do prompt é o maior custo fixo.
+Nas perguntas 6 a 10, a leitura ocupou de 78% a 95% do tempo total (na P9, 64 s de 68 s). Ela é proporcional ao tamanho do prompt: nas P1 e P2, com cerca de 3.800 tokens, levou de 129 a 134 s. Com 2.050 tokens, levou de 63 a 73 s. Isso dá uma velocidade de leitura praticamente constante, de 29 a 32 tokens/s. Ou seja, cada token que entra no prompt tem custo previsível, e o contexto do cliente (transações, produtos, feedbacks) é o principal responsável.
+
+##### 2. Nas respostas longas, a geração domina.
+O tempo de geração acompanha os tokens de saída: a P3 gerou 481 tokens em 192 s, e a P9 gerou 12 tokens em 3 s. A velocidade de 2,4 a 3,8 tokens/s é muito baixa, típica de CPU ou pouca memória. Isso também mostra que a pergunta influencia o tempo: pedir analogia (P2, P3 e P5) gera respostas longas, enquanto perguntas de memória geram respostas curtas.
+
+##### 3. O prompt para de crescer em 2.050 tokens, e isso merece atenção.
+Da P3 em diante, tokens_entrada fica fixo em 2.050, quase exatamente o contexto padrão do Ollama (2.048). Como o histórico cresce até 5 interações, o mais provável é que o prompt esteja sendo truncado. O Ollama costuma cortar o começo do texto, o que pode eliminar o System Prompt e parte dos dados do cliente. Nas P1 e P2 os prompts passavam de 3.700 tokens, então a configuração mudou entre as execuções. Não dá para confirmar o truncamento só pelos números, mas é a hipótese mais forte e precisa ser verificada antes de concluir qualquer coisa sobre a memória do agente.
+
+##### 4. A carga do modelo segue o padrão de inatividade.
+Ela aparece só nas P1, P2, P4 e P6 (5 a 6 s). Pelos horários, isso coincide com intervalos maiores que 5 minutos entre perguntas, que é o tempo padrão que o Ollama mantém o modelo na memória. Nas demais a carga foi zero. Portanto, esse custo não é do agente, e por isso a mediana é mais confiável que a média nos resumos.
+
+##### 5. O tempo de resposta é inviável para atendimento real.
+A mediana foi de 137 s, a média de 152 s e a melhor resposta levou 68 s. Para um cliente conversando, qualquer valor acima de poucos segundos já é sentido como falha. O resultado serve bem como linha de base de um ambiente de desenvolvimento, mas não como desempenho de produção.
+
+##### 6. Velocidade não mede qualidade.
+As perguntas de memória (P6 a P10) tiveram respostas curtas, de 12 a 61 tokens. O gráfico não diz se elas acertaram ou se o agente admitiu não saber. Já a P3, com 481 tokens, indica que o pedido de respostas sucintas no System Prompt nem sempre é seguido. Os acertos de memória e as alucinações precisam ser registrados manualmente ao lado do gráfico.
+
+##### Caminhos de melhoria sugeridos
+Reduzir o contexto fixo: enviar só as linhas relevantes de transações e feedbacks, não as tabelas inteiras. É o ganho mais direto na leitura do prompt.
+Definir num_ctx explicitamente (por exemplo 4096) e comparar os dois cenários. Isso valida a hipótese do truncamento, ao custo de uma leitura mais lenta.
+Ativar stream: True: o tempo total não muda, mas o cliente começa a ver a resposta em segundos.
+Usar GPU ou um modelo menor, que atacam a baixa velocidade de geração.
+Definir keep_alive maior para eliminar as recargas do modelo.
+
+Para o 04-metrica.md, o ideal é repetir o teste depois de ajustar o num_ctx e colocar os dois gráficos lado a lado. Se quiser, preparo essa versão comparativa e uma tabela "antes e depois" para o documento.
 
 Teste 08 - Pergunta 1
 <img width="1592" height="1036" alt="teste_historico_01" src="https://github.com/user-attachments/assets/6c637882-b9c1-4268-a0c1-c7bbd083c2ab" />
