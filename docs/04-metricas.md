@@ -148,6 +148,8 @@ Após os testes, registre suas conclusões:
 
 ## Métricas Avançadas (Opcional)
 
+Com o intuito de realizar os testes de performance do app, implementei o painel com o resultado das métricas de performance e botão que exibe o gráfico com o resultado das métricas.
+
 <img width="1724" height="1583" alt="grafico_performance_historico" src="https://github.com/user-attachments/assets/a93a0c97-af6b-4c31-9758-373d02630ca1" />
 
 ---
