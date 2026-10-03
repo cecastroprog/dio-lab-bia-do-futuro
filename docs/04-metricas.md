@@ -144,7 +144,7 @@ Após os testes, registre suas conclusões:
 - No teste 6, o resultado incluiu o feedback FB-019 que pertence ao time de Suporte Digital. A questão é: Por que ele esta sendo mencionado na relação de feedbacks do time de Atendimento Investimentos?
 - Percebi que o agente não esta guardando o histório para ajudar no contexto, deve ser por isso que não está sabendo sobre o relatório que solicitei na conversa anterior.
 - Pretendo tentar resolver esse problema primeiramente incluindo uma nova tabela que sirva de apoio para a tabela de feedback, ou até mesmo incluir uma tabela com o histórico e inclui-lo no contexto.
-- implemente o gráfico para acompanhar o desempenho do app e só que no resultado, a sequência de perguntas está desordenada.
+- implemente o gráfico para acompanhar o desempenho das últimas 10 perguntas, mas no resultado, a sequência de perguntas está desordenada.
 
 ---
 
