@@ -1,4 +1,4 @@
-# 🤖 Nexos — Agente Inteligente de Análise de Feedbacks
+# 🤖 Nexus — Agente Inteligente de Análise de Feedbacks
 
 > Agente de IA Generativa que transforma feedbacks de clientes sobre ligações ativas de gerentes de agência em **insights claros, priorizados e acionáveis**.
 
