@@ -84,6 +84,8 @@ flowchart TD
 │   ├── perfil_investidor.json
 │   ├── produtos_financeiros.json
 │   ├── transacoes.csv
+│   ├── historico.json
+│   ├── metricas.json
 |   └── feedbacks_clientes.csv
 ├── docs/                          # Documentação detalhada
 │   ├── 01-documentacao-agente.md  # Caso de uso, persona e arquitetura
