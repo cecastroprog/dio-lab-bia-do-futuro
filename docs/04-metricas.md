@@ -138,11 +138,13 @@ Após os testes, registre suas conclusões:
 - No teste 7, imagino que alguma regra foi acionada pelo fato do agente responder que não tem essa informação sobre como o feedback foi classificado no time de Atendimento Investimentos. Nesse momento entendo que ele não soube responder, adimitiu e explicou o feedback mencionado.
 - Implementei o histórico que armazena as perguntas e respostas, o agente possui acesso as 5 últimas interações, senão o prompt fica grande e o llama3.2 perde o foco.
 - Implementei um painel com o resultado das métricas de performance, para analisar as requesitos de qualidade.
+- O gráfico funcionou corretamente após aplicar um zero a esqueda na seguência de números, trazendo um resultado ordenado.
 
 **O que pode melhorar:**
 - No teste 6, o resultado incluiu o feedback FB-019 que pertence ao time de Suporte Digital. A questão é: Por que ele esta sendo mencionado na relação de feedbacks do time de Atendimento Investimentos?
 - Percebi que o agente não esta guardando o histório para ajudar no contexto, deve ser por isso que não está sabendo sobre o relatório que solicitei na conversa anterior.
-- Pretendo tentar resolver esse problema primeiramente incluindo uma nova tabela que sirva de apoio para a tabela de feedback, ou até mesmo incluir uma tabela com o histórico e inclui-lo no contexto.  
+- Pretendo tentar resolver esse problema primeiramente incluindo uma nova tabela que sirva de apoio para a tabela de feedback, ou até mesmo incluir uma tabela com o histórico e inclui-lo no contexto.
+- implemente o gráfico para acompanhar o desempenho do app e só que no resultado, a sequência de perguntas está desordenada.
 
 ---
 
