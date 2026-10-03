@@ -107,6 +107,24 @@ def resumo_metricas():
         return None
     return df.drop(columns=['data_hora']).agg(['mean', 'median', 'max']).T.round(2)
 
+def carregar_metricas_df(ultimas=10):
+    """Carrega as últimas N métricas como DataFrame (P1, P2... no índice)."""
+    try:
+        with open(ARQUIVO_METRICAS, 'r', encoding='utf-8') as f:
+            df = pd.DataFrame(json.load(f))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if df.empty:
+        return None
+    df = df.tail(ultimas).reset_index(drop=True)
+    df.index = [f"P{i+1:02d}" for i in range(len(df))]
+    return df
+
+def limpar_metricas():
+    """Apaga todas as métricas gravadas."""
+    with open(ARQUIVO_METRICAS, 'w', encoding='utf-8') as f:
+        json.dump([], f)
+
 # ========== MONTAR CONTEXTO ==========
 contexto = f"""
 CLIENTE: {perfil['nome']}, {perfil['idade']} anos, perfil {perfil['perfil_investidor']}
@@ -180,8 +198,40 @@ if pergunta := st.chat_input("Sua dúvida sobre feedbacks..."):
                    f"{metrica['tokens_entrada']} tokens entrada | "
                    f"{metrica['tokens_por_s']} tokens/s")
 
-: resumo na barra lateral
+# resumo na barra lateral
 resumo = resumo_metricas()
 if resumo is not None:
     st.sidebar.subheader("Métricas de performance")
     st.sidebar.dataframe(resumo)
+
+# ========== BOTÕES: GRÁFICO E LIMPEZA ==========
+st.sidebar.divider()
+
+# Botão que abre/fecha o gráfico
+if st.sidebar.button("📊 Abrir/fechar gráfico de métricas"):
+    st.session_state['mostrar_grafico'] = not st.session_state.get('mostrar_grafico', False)
+
+# Botão que limpa histórico e métricas (com confirmação para evitar clique acidental)
+confirmar = st.sidebar.checkbox("Confirmar limpeza")
+if st.sidebar.button("🗑️ Limpar histórico e métricas", disabled=not confirmar):
+    excluir_historico()
+    limpar_metricas()
+    st.session_state['mostrar_grafico'] = False
+    st.session_state['limpou'] = True
+    st.rerun()
+
+if st.session_state.pop('limpou', False):
+    st.sidebar.success("Histórico e métricas apagados.")
+
+# Gráfico
+if st.session_state.get('mostrar_grafico'):
+    df_graf = carregar_metricas_df()
+    if df_graf is None:
+        st.info("Ainda não há métricas para exibir.")
+    else:
+        st.subheader("Métricas de performance (últimas 10 perguntas)")
+        st.caption("Tempo por pergunta, em segundos")
+        st.bar_chart(df_graf[['carga_modelo_s', 'leitura_prompt_s', 'geracao_s']])
+        st.caption("Tokens de entrada e saída")
+        st.line_chart(df_graf[['tokens_entrada', 'tokens_saida']])
+
