@@ -124,6 +124,8 @@ Use com os participante do teste:
 | Coerência | "A linguagem foi clara e fácil de entender? | 5 |
 
 Comentário aberto: O que poderia melhorar?
+incluir botão para limpar histórico e métricas
+exibir o relatório de métricas
 
 ---
 
