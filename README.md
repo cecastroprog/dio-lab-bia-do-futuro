@@ -10,7 +10,7 @@ Projeto desenvolvido no desafio **BIA do Futuro** da [DIO](https://www.dio.me/) 
 
 ### O problema
 
-Analisar feedbacks de clientes sobre ofertas de produtos financeiras feitas por telefone é difícil. Além do grande volume de dados, há vieses emocionais de quem analisa, respostas vagas ("Não gostei") e comentários subjetivos ou sarcásticos que as métricas quantitativas (notas de 1 a 10) não capturam.
+Analisar feedbacks de clientes sobre ofertas de produtos financeiros feitas por telefone é difícil. Além do grande volume de dados, há vieses emocionais de quem analisa, respostas vagas ("Não gostei") e comentários subjetivos ou sarcásticos que as métricas quantitativas (notas de 1 a 10) não capturam.
 
 ### A solução
 
