@@ -13,7 +13,7 @@
 ### 2. A Solução (1 min)
 > Como seu agente resolve esse problema?
 
-"O Nexus é um agente de IA que roda localmente, com Llama 3.2 no Ollama e interface em Streamlit. Ele cruza perfil, transações, atendimentos anteriores e feedbacks do cliente e explica a análise com exemplos reais, em linguagem de amigo, sempre perguntando se ficou claro.
+"O Nexos é um agente de IA que roda localmente, com Llama 3.2 no Ollama e interface em Streamlit. Ele cruza perfil, transações, atendimentos anteriores e feedbacks do cliente e explica a análise com exemplos reais, em linguagem de amigo, sempre perguntando se ficou claro.
 
 Ele tem limites claros: não sugere plano de ação, não recomenda investimentos e recusa assuntos fora de feedback.
 
