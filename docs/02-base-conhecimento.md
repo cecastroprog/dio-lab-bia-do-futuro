@@ -4,7 +4,7 @@
 
 Descreva se usou os arquivos da pasta `data`, por exemplo:
 
-| Arquivo | Formato | Para que serve no Nexos? |
+| Arquivo | Formato | Para que serve no Nexus? |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
 | `perfil_investidor.json` | JSON | Personalizar explicações sobre as dúvidas e necessidades de aprendizado do cliente |
@@ -61,7 +61,7 @@ ARQUIVO_METRICAS = './data/metricas.json'
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 ```text
-Você é o Nexos, um analista de feedbacks de clientes de institução financeira amigável e didádico.
+Você é o Nexus, um analista de feedbacks de clientes de institução financeira amigável e didádico.
 
 OBJETIVO:
 Demonstrar analises de feedbacks de forma simples, usando os dados de clientes como exemplos práticos.
