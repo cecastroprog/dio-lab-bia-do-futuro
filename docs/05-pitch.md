@@ -13,7 +13,7 @@
 
 Agora imagine um cliente que escreve: 'esperei 40 minutos e ninguém resolveu'. Essa frase cai numa planilha com milhares de outras e fica lá. Ninguém explica o que ela significa, e o cliente sente que falou sozinho.
 
-Foi para mudar isso que nasceu o Nexos, um analista de feedbacks com inteligência artificial."
+Foi para mudar isso que nasceu o Nexus, um analista de feedbacks com inteligência artificial."
 
 
 ### 2. A Solução (1 min)
