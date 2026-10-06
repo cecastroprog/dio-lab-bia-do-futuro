@@ -9,7 +9,7 @@
 
 > Qual dor do cliente você resolve?
 
-"Olá, eu sou **[nome]** e este é o **Nexus**, um analista de feedbacks de clientes com memória e métricas.
+"Olá, eu sou **[nome]** e este é o **Nexus**, um analista de feedbacks de clientes.
 
 Instituições financeiras recebem milhares de feedbacks: elogios, reclamações, sugestões. Eles ficam em planilhas, e ninguém consegue ler tudo nem explicar o que significam para o cliente. O resultado: padrões passam despercebidos e a pessoa se sente ignorada."
 
@@ -17,11 +17,11 @@ Instituições financeiras recebem milhares de feedbacks: elogios, reclamações
 
 > Como seu agente resolve esse problema?
 
-"O Nexus é um agente de IA que roda localmente, com Llama 3.2 no Ollama e interface em Streamlit. Ele cruza perfil, transações, atendimentos anteriores e feedbacks do cliente e explica a análise com exemplos reais, em linguagem de amigo, sempre perguntando se ficou claro.
+"O Nexus é um analista de feedbacks com inteligência artificial. Ele lê os dados do cliente, como perfil, transações, atendimentos e feedbacks, e explica a análise com exemplos reais, em linguagem simples, como numa conversa entre amigos. No final, ele sempre pergunta se ficou claro.
 
-Ele tem limites claros: não sugere plano de ação, não recomenda investimentos e recusa assuntos fora de feedback.
+Ele também tem limites: não sugere plano de ação e não recomenda investimentos. Ele explica e analisa, e só fala de feedback.
 
-E eu fui além: dei memória ao agente. Cada resposta é gravada em um histórico, e as últimas interações voltam ao prompt. Assim o cliente pode perguntar 'explica melhor isso' sem repetir o contexto."
+E ele lembra do que foi conversado. Se o cliente pedir 'explica melhor isso', ele entende do que se trata, sem precisar recomeçar."
 
 ### 3. Demonstração (1 min)
 
@@ -31,18 +31,18 @@ Gravação de tela, com os tempos de espera cortados ou acelerados (avisar na te
 
 | Tempo | O que mostrar | O que falar |
 |---|---|---|
-| 0:00 a 0:15 | Pergunta "O que é um feedback negativo?" e a resposta, com o tempo exibido abaixo | "Aqui o Nexus analisa com os dados do cliente." |
-| 0:15 a 0:35 | Pergunta "Pode explicar melhor isso?" | "Ele entende o 'isso' porque lê o histórico." |
-| 0:35 a 0:45 | Pergunta fora do tema, e o agente recusa | "E mantém o papel dele." |
-| 0:45 a 1:00 | Botão do gráfico de métricas na barra lateral | "Cada resposta também gera métricas de performance." |
+| 0:00 a 0:15 | Pergunta "O que é um feedback negativo?" e a resposta | "Aqui o Nexus explica o conceito de forma simples." |
+| 0:15 a 0:35 | Pergunta "Pode explicar melhor isso?" | "Ele entende o 'isso' porque lembra da conversa." |
+| 0:35 a 0:45 | Pergunta fora do tema, e o agente recusa | "E mantém o papel dele: analista de feedbacks." |
+| 0:45 a 1:00 | Pergunta sobre os feedbacks reais dos clientes (ex.: "O que os feedbacks dos clientes mostram?") e a resposta citando exemplos dos dados | "Agora a análise de verdade: ele usa os feedbacks reais para mostrar o que os clientes estão dizendo." |
 
 ### 4. Diferencial e Impacto (30 seg)
 
 > Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-"O diferencial é que eu não parei na resposta: eu testei e medi. Num teste de 10 perguntas, o Nexus acertou todas, inclusive as que testavam o limite da memória: ele lembra das 5 últimas interações e não sabe o que ficou fora dessa janela.
+"Pense em quantas vezes um feedback é lido, arquivado e esquecido. O Nexus muda isso: ele transforma opiniões espalhadas em explicações que qualquer pessoa entende.
 
-As métricas também mostraram onde melhorar: a leitura do contexto consome até 95% do tempo de resposta. E como roda localmente, os dados do cliente não saem da máquina.
+Para o cliente, é se sentir ouvido. Para a instituição, é enxergar rápido o que está funcionando e o que está incomodando. E sempre com segurança: ele explica e analisa, sem decidir pelo cliente.
 
 Eu sou **[nome]**, e este foi o Nexus. Obrigado!"
 
@@ -51,8 +51,8 @@ Eu sou **[nome]**, e este foi o Nexus. Obrigado!"
 ## Slides de apoio (opcional)
 
 1. **Título**: Nexus, nome e foto/identificação
-2. **Arquitetura**: dados do cliente → histórico → Ollama (Llama 3.2) → resposta
-3. **Resultados**: gráfico de métricas ao lado de "Teste de histórico: 10/10"
+2. **Como funciona**: feedbacks e dados do cliente → Nexus → explicação em linguagem simples
+3. **Impacto**: cliente ouvido, instituição enxerga padrões, análise com segurança
 
 ---
 
