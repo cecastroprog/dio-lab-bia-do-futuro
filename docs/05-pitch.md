@@ -9,9 +9,12 @@
 
 > Qual dor do cliente você resolve?
 
-"Olá, eu sou **[nome]** e este é o **Nexus**, um analista de feedbacks de clientes.
+"Quando foi a última vez que você deu um feedback e sentiu que alguém realmente leu?
 
-Instituições financeiras recebem milhares de feedbacks: elogios, reclamações, sugestões. Eles ficam em planilhas, e ninguém consegue ler tudo nem explicar o que significam para o cliente. O resultado: padrões passam despercebidos e a pessoa se sente ignorada."
+Agora imagine um cliente que escreve: 'esperei 40 minutos e ninguém resolveu'. Essa frase cai numa planilha com milhares de outras e fica lá. Ninguém explica o que ela significa, e o cliente sente que falou sozinho.
+
+Foi para mudar isso que nasceu o Nexos, um analista de feedbacks com inteligência artificial."
+
 
 ### 2. A Solução (1 min)
 
